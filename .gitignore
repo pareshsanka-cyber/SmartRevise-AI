@@ -1,8 +1,37 @@
+# Virtual environments
 **/venv/
+**/.venv/
+**/env/
+
+# Python cache and bytecode
 **/__pycache__/
-**/*.db
 **/*.pyc
-.gemini/
-*flask_log.txt*
-*flask_err.txt*
+**/*.pyo
+**/*.pyd
+
+# Environment secrets
 **/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Database files
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/instance/
+
+# Application logs & debug output
+*.log
+**/*.log
+*flask_log*
+*flask_err*
+*flask_stdout*
+*flask_stderr*
+*mail_log*
+users_debug.txt
+
+# Antigravity & IDE
+.gemini/
+.DS_Store
+Thumbs.db
